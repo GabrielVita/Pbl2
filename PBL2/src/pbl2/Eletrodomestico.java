@@ -9,11 +9,12 @@ package pbl2;
  *
  * @author ANGELO
  */
-public class Eletrodomestico {
+public abstract class Eletrodomestico {
     protected String marca;
     protected double preco;
     protected int voltagem;
-
+    protected int mes;
+ 
     public String getMarca() {
         return marca;
     }
@@ -37,6 +38,8 @@ public class Eletrodomestico {
     public void setVoltagem(int voltagem) {
         this.voltagem = voltagem;
     }
+    
+    public abstract double calcDesc (int mes);
             
     
 }

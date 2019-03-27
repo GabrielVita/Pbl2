@@ -10,7 +10,12 @@ package pbl2;
  * @author ANGELO
  */
 public class FerroDePassar extends Eletrodomestico {
-    public void desconto15(){
-        this.preco=this.preco*0.85;
+    
+    @Override
+    public double calcDesc(int mes){
+        if(mes==5){
+            this.preco=this.preco*0.85;
+        }
+        return 0.0;
     }
 }
